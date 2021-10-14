@@ -137,23 +137,8 @@ if __name__ == "__main__":
             speak("opening facebook")
 
         elif 'ertugrul gazi' in query:
-            speak('on which platform you would like to see it')
-            speak('first on website Giveme5')
-            speak('second on website TRT Drama')
-            speak('third facebook.com')
-            speak('or another websites sir if you are using another website')
-            speak('please give me the full link')
-
-            print('on which platform you would like to see it\n'
-                'first on website Giveme5\n'
-                'second on website TRT Drama\n'
-                'third facebook.com\n'
-                'or another websites\n'
-                'sir,please give me the full link\n')
-
-            link = str(takeCommand)
-            webbrowser.open(link)
-            speak(f"Opening {link}")
+            youtubevideoopener(query)
+            speak(f"Opening {query}")
 
         elif 'play music' in query:
             music_dir = 'E:\\B\\1 ST\\Songs\\English Songs'
